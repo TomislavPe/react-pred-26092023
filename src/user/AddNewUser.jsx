@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import styles from "./User.module.css"
+import styles from "./User.module.css";
 
 const AddNewUser = ({ addUser }) => {
     const [name, setName] = useState("");
     const [age, setAge] = useState(30);
+
+    const btnStyle = {
+        backgroundColor: "lightgrey",
+        color: "blue",
+    };
     return (
-        <form className={styles.addSection}
+        <form
+            className={styles.addSection}
             onSubmit={(event) => {
                 addUser(event, name, age);
                 setName("");
@@ -38,7 +44,9 @@ const AddNewUser = ({ addUser }) => {
                     />
                 </label>
             </div>
-            <button type="submit">Potvrdi</button>
+            <button style={btnStyle} type="submit">
+                Potvrdi
+            </button>
         </form>
     );
 };
