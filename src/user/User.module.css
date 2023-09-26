@@ -1,0 +1,15 @@
+.boxedSection {
+    border: 5px solid grey;
+    border-radius: 30px;
+    background-color: yellow;
+    color: black;
+    margin: 30px;
+}
+
+.addSection {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    margin: 30px;
+}
